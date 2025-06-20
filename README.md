@@ -62,29 +62,29 @@ python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">
   <p><strong>Activating virtual environment (for Windows):</strong></p>
   <pre><code id="code2">&lt;env name&gt;\Scripts\activate
 # Example:
-.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
+.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')"></button></pre>
 
   <p><strong>If activation fails, authorize script execution:</strong></p>
   <pre><code id="code3"># Open PowerShell as Administrator, then run:
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')"></button></pre>
 
   <h3><strong>3. Install Django:</strong></h3>
-  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
+  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')"></button></pre>
 
   <h2><strong>⚙️ Starting the Project</strong></h2>
 
   <p><strong>Create your Django project:</strong></p>
   <pre><code id="code5">django-admin startproject &lt;project_name&gt;
 # Example:
-django-admin startproject myfirstdjango</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
+django-admin startproject myfirstdjango</code><button class="copy-btn" onclick="copyCode('code5')"></button></pre>
 
   <p><strong>Navigate into your project directory:</strong></p>
   <pre><code id="code6">cd &lt;project_name&gt;
 # Example:
-cd myfirstdjango</code><button class="copy-btn" onclick="copyCode('code6')">Copy</button></pre>
+cd myfirstdjango</code><button class="copy-btn" onclick="copyCode('code6')"></button></pre>
 
   <p><strong>Run the development server:</strong></p>
-  <pre><code id="code7">python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code7')">Copy</button></pre>
+  <pre><code id="code7">python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code7')"></button></pre>
 
   <script>
     function copyCode(id) {
