@@ -40,37 +40,8 @@
 
   <h1><strong>🚀 Django Project Setup Guide</strong></h1>
 
-  <h2><strong>📦 Installation</strong></h2>
-
-  <h3><strong>1. Install Python:</strong></h3>
-  <ul>
-    <li>Install <code>python-3.7.2</code> and <code>pip</code>.</li>
-    <li>Reference:
-      <a href="https://docs.python-guide.org/starting/installation/" target="_blank">
-        https://docs.python-guide.org/starting/installation/
-      </a>
-    </li>
-  </ul>
-
-  <h3><strong>2. Set Up Virtual Environment:</strong></h3>
-  <pre><code id="code1">python -m venv &lt;env_name&gt;
-# Example:
-python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
-
-  <pre><code id="code2">.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
-
-  <pre><code id="code3">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
-
-  <h3><strong>3. Install Django:</strong></h3>
-  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
-
-  <h2><strong>⚙️ Starting the Project</strong></h2>
-  <pre><code id="code5">django-admin startproject myfirstdjango
-cd myfirstdjango
-python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
-
   <h2><strong>🗂️ Project Architecture</strong></h2>
-  <pre><code id="code6">Myfirstdjango/
+  <pre><code id="code-arch">Myfirstdjango/
 │
 ├── Media/
 │   ├── Ss1/
@@ -105,7 +76,36 @@ python manage.py runserver</code><button class="copy-btn" onclick="copyCode('cod
 │
 ├── db.sqlite3
 ├── manage.py
-└── README.md</code><button class="copy-btn" onclick="copyCode('code6')">Copy</button></pre>
+└── README.md</code><button class="copy-btn" onclick="copyCode('code-arch')">Copy</button></pre>
+
+  <h2><strong>📦 Installation</strong></h2>
+
+  <h3><strong>1. Install Python:</strong></h3>
+  <ul>
+    <li>Install <code>python-3.7.2</code> and <code>pip</code>.</li>
+    <li>Reference:
+      <a href="https://docs.python-guide.org/starting/installation/" target="_blank">
+        https://docs.python-guide.org/starting/installation/
+      </a>
+    </li>
+  </ul>
+
+  <h3><strong>2. Set Up Virtual Environment:</strong></h3>
+  <pre><code id="code1">python -m venv &lt;env_name&gt;
+# Example:
+python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
+
+  <pre><code id="code2">.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
+
+  <pre><code id="code3">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
+
+  <h3><strong>3. Install Django:</strong></h3>
+  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
+
+  <h2><strong>⚙️ Starting the Project</strong></h2>
+  <pre><code id="code5">django-admin startproject myfirstdjango
+cd myfirstdjango
+python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
 
   <script>
     function copyCode(id) {
