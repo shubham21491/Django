@@ -16,20 +16,7 @@
       background: #f4f4f4;
       padding: 10px;
       border-left: 4px solid #007acc;
-      position: relative;
       overflow-x: auto;
-    }
-    button.copy-btn {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      background: #007acc;
-      color: white;
-      border: none;
-      padding: 4px 8px;
-      cursor: pointer;
-      font-size: 0.8em;
-      border-radius: 3px;
     }
     strong {
       font-size: 1.1em;
@@ -41,7 +28,8 @@
   <h1><strong>🚀 Django Project Setup Guide</strong></h1>
 
   <h2><strong>🗂️ Project Architecture</strong></h2>
-  <pre><code id="code-arch">Myfirstdjango/
+  <pre>
+Myfirstdjango/
 │
 ├── Media/
 │   ├── Ss1/
@@ -76,7 +64,8 @@
 │
 ├── db.sqlite3
 ├── manage.py
-└── README.md</code><button class="copy-btn" onclick="copyCode('code-arch')">Copy</button></pre>
+└── README.md
+  </pre>
 
   <h2><strong>📦 Installation</strong></h2>
 
@@ -91,29 +80,31 @@
   </ul>
 
   <h3><strong>2. Set Up Virtual Environment:</strong></h3>
-  <pre><code id="code1">python -m venv &lt;env_name&gt;
+  <pre>
+python -m venv <env_name>
 # Example:
-python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
+python -m venv .venv
+  </pre>
 
-  <pre><code id="code2">.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
+  <pre>
+.venv\Scripts\activate
+  </pre>
 
-  <pre><code id="code3">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
+  <pre>
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+  </pre>
 
   <h3><strong>3. Install Django:</strong></h3>
-  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
+  <pre>
+py -m pip install Django
+  </pre>
 
   <h2><strong>⚙️ Starting the Project</strong></h2>
-  <pre><code id="code5">django-admin startproject myfirstdjango
+  <pre>
+django-admin startproject myfirstdjango
 cd myfirstdjango
-python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
-
-  <script>
-    function copyCode(id) {
-      const code = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(code);
-      alert("Copied to clipboard!");
-    }
-  </script>
+python manage.py runserver
+  </pre>
 
 </body>
 </html>
