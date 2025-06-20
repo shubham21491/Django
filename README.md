@@ -9,7 +9,7 @@
       padding: 20px;
       background: #fdfdfd;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #2c3e50;
     }
     pre {
@@ -45,7 +45,7 @@
   <h3><strong>1. Install Python:</strong></h3>
   <ul>
     <li>Install <code>python-3.7.2</code> and <code>pip</code>.</li>
-    <li>Follow the steps from the reference below based on your OS:<br>
+    <li>Reference:
       <a href="https://docs.python-guide.org/starting/installation/" target="_blank">
         https://docs.python-guide.org/starting/installation/
       </a>
@@ -53,38 +53,59 @@
   </ul>
 
   <h3><strong>2. Set Up Virtual Environment:</strong></h3>
-
-  <p><strong>Creating virtual environment:</strong></p>
-  <pre><code id="code1">python -m venv &lt;name of the environment&gt;
+  <pre><code id="code1">python -m venv &lt;env_name&gt;
 # Example:
-python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')"></button></pre>
+python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
 
-  <p><strong>Activating virtual environment (for Windows):</strong></p>
-  <pre><code id="code2">&lt;env name&gt;\Scripts\activate
-# Example:
-.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')"></button></pre>
+  <pre><code id="code2">.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
 
-  <p><strong>If activation fails, authorize script execution:</strong></p>
-  <pre><code id="code3"># Open PowerShell as Administrator, then run:
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')"></button></pre>
+  <pre><code id="code3">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
 
   <h3><strong>3. Install Django:</strong></h3>
-  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')"></button></pre>
+  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
 
   <h2><strong>⚙️ Starting the Project</strong></h2>
+  <pre><code id="code5">django-admin startproject myfirstdjango
+cd myfirstdjango
+python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
 
-  <p><strong>Create your Django project:</strong></p>
-  <pre><code id="code5">django-admin startproject &lt;project_name&gt;
-# Example:
-django-admin startproject myfirstdjango</code><button class="copy-btn" onclick="copyCode('code5')"></button></pre>
-
-  <p><strong>Navigate into your project directory:</strong></p>
-  <pre><code id="code6">cd &lt;project_name&gt;
-# Example:
-cd myfirstdjango</code><button class="copy-btn" onclick="copyCode('code6')"></button></pre>
-
-  <p><strong>Run the development server:</strong></p>
-  <pre><code id="code7">python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code7')"></button></pre>
+  <h2><strong>🗂️ Project Architecture</strong></h2>
+  <pre><code id="code6">Myfirstdjango/
+│
+├── Media/
+│   ├── Ss1/
+│   └── Ss2/
+│
+├── Myfirstdjango/  ← Django main project folder
+│   ├── __pycache__/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── views.py
+│   └── wsgi.py
+│
+├── Second/  ← Your app
+│   ├── __pycache__/
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── models.py
+│   └── tests.py
+│
+├── static/
+│   └── style.css
+│
+├── Templates/
+│   └── theme/
+│
+├── db.sqlite3
+├── manage.py
+└── README.md</code><button class="copy-btn" onclick="copyCode('code6')">Copy</button></pre>
 
   <script>
     function copyCode(id) {
