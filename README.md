@@ -57,7 +57,7 @@
   <p><strong>Creating virtual environment:</strong></p>
   <pre><code id="code1">python -m venv &lt;name of the environment&gt;
 # Example:
-python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
+python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')"></button></pre>
 
   <p><strong>Activating virtual environment (for Windows):</strong></p>
   <pre><code id="code2">&lt;env name&gt;\Scripts\activate
