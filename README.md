@@ -53,8 +53,6 @@
 
   <h1><strong>🚀 Django Project Setup Guide</strong></h1>
 
-<<<<<<< HEAD
-=======
   <h2><strong>🗂️ Project Architecture</strong></h2>
   <pre><code id="code-arch">
 Myfirstdjango/
@@ -95,7 +93,6 @@ Myfirstdjango/
 └── README.md
 </code><button class="copy-btn" onclick="copyCode('code-arch')">Copy</button></pre>
 
->>>>>>> 6099ae3a33749b3543e14700b19899e425e0db19
   <h2><strong>📦 Installation</strong></h2>
 
   <h3><strong>1. Install Python:</strong></h3>
