@@ -1,48 +1,98 @@
-**Installation**
-  Prerequisites
-    1.Install Python:
-      Install python-3.7.2 and python-pip.
-      Follow the steps from the below reference document based on your Operating System.
-      Reference: https://docs.python-guide.org/starting/installation/
-    
-    2.Set Up Virtual Environment:
-      # creating virtual environment:
-      python -m venv <name of the environment>
-      eg: pyhton -m venv <.venv>
-    
-      # activation of virtual environment:
-      for windows:
-        <name of the environment>\Scripts\activate
-        eg: .venv\Scripts\activate
-        if this command not working or giving an error then:
-          check or give the authorization:
-            windows key -> Power shell -> Run as Administrator 
-            shell opens:
-              Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-              
-    3.Install Django:
-      #install django on environment
-      #there are many more methods but i had used this
-      py -m pip install Django
-      
-**Starting Of Project**
-  starting your project:
-    django-admin startproject <name of the project>
-    eg: django-admin startproject myfirstdjango
-  running server:
-    first get inside to the project which you had made
-    cd <name of the project>
-    eg: cd myfirstdjango
-    then:
-    python manage.py runserver
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Django Project Setup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #007acc;
+      position: relative;
+      overflow-x: auto;
+    }
+    button.copy-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 0.8em;
+      border-radius: 3px;
+    }
+    strong {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
 
-  
-  
-      
+  <h1><strong>🚀 Django Project Setup Guide</strong></h1>
 
-              
+  <h2><strong>📦 Installation</strong></h2>
 
-      
+  <h3><strong>1. Install Python:</strong></h3>
+  <ul>
+    <li>Install <code>python-3.7.2</code> and <code>pip</code>.</li>
+    <li>Follow the steps from the reference below based on your OS:<br>
+      <a href="https://docs.python-guide.org/starting/installation/" target="_blank">
+        https://docs.python-guide.org/starting/installation/
+      </a>
+    </li>
+  </ul>
 
+  <h3><strong>2. Set Up Virtual Environment:</strong></h3>
 
+  <p><strong>Creating virtual environment:</strong></p>
+  <pre><code id="code1">python -m venv &lt;name of the environment&gt;
+# Example:
+python -m venv .venv</code><button class="copy-btn" onclick="copyCode('code1')">Copy</button></pre>
+
+  <p><strong>Activating virtual environment (for Windows):</strong></p>
+  <pre><code id="code2">&lt;env name&gt;\Scripts\activate
+# Example:
+.venv\Scripts\activate</code><button class="copy-btn" onclick="copyCode('code2')">Copy</button></pre>
+
+  <p><strong>If activation fails, authorize script execution:</strong></p>
+  <pre><code id="code3"># Open PowerShell as Administrator, then run:
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code><button class="copy-btn" onclick="copyCode('code3')">Copy</button></pre>
+
+  <h3><strong>3. Install Django:</strong></h3>
+  <pre><code id="code4">py -m pip install Django</code><button class="copy-btn" onclick="copyCode('code4')">Copy</button></pre>
+
+  <h2><strong>⚙️ Starting the Project</strong></h2>
+
+  <p><strong>Create your Django project:</strong></p>
+  <pre><code id="code5">django-admin startproject &lt;project_name&gt;
+# Example:
+django-admin startproject myfirstdjango</code><button class="copy-btn" onclick="copyCode('code5')">Copy</button></pre>
+
+  <p><strong>Navigate into your project directory:</strong></p>
+  <pre><code id="code6">cd &lt;project_name&gt;
+# Example:
+cd myfirstdjango</code><button class="copy-btn" onclick="copyCode('code6')">Copy</button></pre>
+
+  <p><strong>Run the development server:</strong></p>
+  <pre><code id="code7">python manage.py runserver</code><button class="copy-btn" onclick="copyCode('code7')">Copy</button></pre>
+
+  <script>
+    function copyCode(id) {
+      const code = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(code);
+      alert("Copied to clipboard!");
+    }
+  </script>
+
+</body>
+</html>
